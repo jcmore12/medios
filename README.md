@@ -1,2 +1,2 @@
-# medios
+# mediosInteractivos
 Ejercicios clase Medios Interactivos
