@@ -1,2 +1,6 @@
 # mediosInteractivos
-Ejercicios clase Medios Interactivos
+Ejercicios clase Medios Interactivos Juan Camilo Moreno
+[Forma y color](https://jcmore12.github.io/mediosInteractivos/01/)
+[Repetición](https://jcmore12.github.io/mediosInteractivos/02/)
+[Movimiento](https://jcmore12.github.io/mediosInteractivos/03/)
+[Herramienta de dibujo](https://jcmore12.github.io/mediosInteractivos/04/)
