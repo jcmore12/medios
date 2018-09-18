@@ -1,10 +1,23 @@
-//El tiempo realmente solo es una acumulaciøn de eventos . 
-//Esto quiere decir que todos los puntos son pasado, presente y futuro
-//Considero que los relojes comunes solo muestran la hora como un punto
-//en el dia, cuando realmente es un acumulado de lo que se ha perdido
-//del día. Mi reloj propone presionar a las presonas a aprovechar mejor su 
-//día
+/*
 
+EXPLICACIÓN CONCEPTO
+El tiempo realmente solo es una acumulación de eventos . 
+Esto quiere decir que todos los puntos son pasado, presente y futuro
+Considero que los relojes comunes solo muestran la hora como un punto
+en el dia, cuando realmente es un acumulado de lo que se ha perdido
+del día. Mi reloj propone presionar a las presonas a aprovechar mejor su 
+día
+
+EXPLICACIÓN MODIFICACIÓN DEL CÓDIGO PARA MEJORA EN VISUALIZACIÓN
+La barra va cambiando durante las 24 horas del día, pero para que sea más fácil observar el cambio
+cambié que la variable miHora signifique hour(), para que el cambio pase con cada segundo que pasa.
+
+EXPLICACIÓN FUNCIONAMIENTO
+Por cada cuadrante hay dos tonalidades del color(tonalidades de verde,naranja y rojo),
+que representan que tan colgada está la persona de tiempo.
+Aparte, después de las 6 de la tarde el fondo cambia a "noche" con estrellas y la luna
+Tanto el sol como la luna van bajando con el paso del tiempo dependiendo de si es noche o día
+*/
 
 //variables minuto para barra lateral
 var miMinuto;
@@ -14,7 +27,7 @@ var miMinutoModificado;
 var miSegundo;
 var miSegundoModificado;
 
-//variables Hora para reloj ascendente
+//variables Hora para reloj ascendente principal
 
 var miHora;
 var miHoraModificado;
@@ -29,7 +42,7 @@ function draw() {
 
   //Fondo del reloj que representa si es de día  de noche
   push(); {
-    if (hour() > 18 && hour()<6) { //PM
+    if (hour() > 18 && hour() < 6) { //PM
 
       //fondo noche
       background(0, 0, 64);
@@ -74,11 +87,11 @@ function draw() {
 
     //lo que representan las variables de tiempo
     miMinuto = minute();
-    miHora = hour();
+    miHora = second();
     miSegundo = second();
 
     //reglas de tres para conversion de medidas
-    miHoraModificado = map(miHora, 0, 23, 0, 599)
+    miHoraModificado = map(miHora, 0, 59, 0, 599)
     miMinutoModificado = map(miMinuto, 0, 59, 0, 599)
     miSegundoModificado = map(miSegundo, 0, 59, 0, 599)
 
@@ -122,17 +135,17 @@ function draw() {
     //barra lateral que baja por cada minuto que pasa
 
     noStroke();
-    fill(238, 0, 0,150)
+    fill(238, 0, 0, 150)
     quad(296, 0, 300, 0, 300, miMinutoModificado, 296, miMinutoModificado)
 
     //barra lateral que baja por cada segundo que pasa
 
     noStroke();
-    fill(0, 0, 255,110)
+    fill(0, 0, 255, 110)
     quad(0, 0, 3, 0, 3, miSegundoModificado, 0, miSegundoModificado)
   }
 
-  
+
   //Silueta casas
 
   fill(0)
@@ -197,10 +210,10 @@ function draw() {
   vertex(300, 534);
   vertex(300, 600);
   endShape(CLOSE);
-  
+
   //marcas de etapas del día
   strokeWeight(1)
   stroke(0)
-  line(0,200,300,200)
-  line(0,400,300,400)
+  line(0, 200, 300, 200)
+  line(0, 400, 300, 400)
 }
