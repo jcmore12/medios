@@ -29,7 +29,7 @@ function draw() {
 
   //Fondo del reloj que representa si es de día  de noche
   push(); {
-    if (hour() > 18) { //PM
+    if (hour() > 18 && hour()<6) { //PM
 
       //fondo noche
       background(0, 0, 64);
@@ -49,7 +49,7 @@ function draw() {
 
       //luna lunera
 
-      translate(70, 100)
+      translate(70, 60)
       fill(255, 255, 255, 80);
       noStroke();
       ellipse(0, miHoraModificado, 70, 70)
@@ -64,7 +64,7 @@ function draw() {
       push();
 
       //sol
-      translate(70, 100)
+      translate(70, 60)
       fill(250, 210, 1);
       noStroke();
       ellipse(0, miHoraModificado, 60, 60)
