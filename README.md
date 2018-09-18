@@ -8,3 +8,5 @@ Ejercicios clase Medios Interactivos Juan Camilo Moreno
 [Movimiento](https://jcmore12.github.io/mediosInteractivos/03/)
 
 [Herramienta de dibujo](https://jcmore12.github.io/mediosInteractivos/04/)
+
+[Reloj](https://jcmore12.github.io/mediosInteractivos/05/)
