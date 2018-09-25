@@ -390,12 +390,17 @@
         }
         // 5 Signo musica
         if (bee.currentTime() > 38 && bee.currentTime() < 41) {
+          
+          stroke(0);
         line(mouseX,mouseY,mouseX+55,mouseY);
         line(mouseX+55,mouseY,mouseX+55,mouseY+48);
         line(mouseX,mouseY,mouseX,mouseY+50);
+          
+          push();
           fill(0);
         ellipse(mouseX-10,mouseY+50,21,21);
         ellipse(mouseX+44,mouseY+50,21,21);
+          pop();
         }
         //6 luna
          if (bee.currentTime() > 41 && bee.currentTime() < 49) {
