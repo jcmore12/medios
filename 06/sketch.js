@@ -1,4 +1,4 @@
-//VARIABLES
+ //VARIABLES
 
       var posXbot1 = 200;
       var posYbot1 = 90;
@@ -452,9 +452,26 @@
           pop();
         }
                   // 12 pensamiento
-        //13 corazon
+        if (bee.currentTime() > 80 && bee.currentTime() < 87) {
+          noStroke();
+          fill(255);
+          ellipse(mouseX, mouseY, 80, 70);
+          ellipse(mouseX + 43, mouseY - 24, 75, 61);
+          ellipse(mouseX + 52, mouseY + 17, 60, 53);
+          ellipse(mouseX + 73, mouseY, 40, 30);
+          
+          ellipse(mouseX-10,mouseY+30,10,10)
+          ellipse(mouseX-20,mouseY+40,10,10)
+            }
+        
 
         //14 blue
+        if (bee.currentTime() > 87 && bee.currentTime() < 97) {
+          push();
+          fill(0,20,255);
+          ellipse(mouseX,mouseY,50,50)
+        pop();
+        }
         // 15 DECEMBER
         if (bee.currentTime() > 97 && bee.currentTime() < 100) {
           push();
@@ -520,8 +537,37 @@
 
           }
           //17 blue
+          if (bee.currentTime() > 104 && bee.currentTime() < 110) {
+          push();
+          fill(0,20,255);
+          ellipse(mouseX,mouseY,50,50)
+        pop();
+          }
           //18 hey hey hey
+           if (bee.currentTime() > 110 && bee.currentTime() < 113) {
+          
+          push();
+          fill(255);
+          strokeWeight(1);
+          textFont("Times")
+          textSize(20)
+          textAlign(CENTER);
+          text("HEY HEY HEY", mouseX + 40, mouseY - 7)
+          pop();
+        }
           //19 badeya
+           if (bee.currentTime() > 113 && bee.currentTime() < 400) {
+          
+
+          push();
+          fill(255);
+          strokeWeight(1);
+          textFont("Times")
+          textSize(20)
+          textAlign(CENTER);
+          text("BA DE YA", mouseX + 40, mouseY - 7)
+          pop();
+        }
           //20 september
           //21 badeya
           //22 nubes
