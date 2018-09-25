@@ -1,4 +1,4 @@
- //VARIABLES
+   //VARIABLES
 
       var posXbot1 = 200;
       var posYbot1 = 90;
@@ -401,6 +401,7 @@
          if (bee.currentTime() > 41 && bee.currentTime() < 49) {
         push();
         strokeWeight(2)
+           fill(255)
         quad(mouseX,mouseY,mouseX+90,mouseY+76,mouseX-31,mouseY+146,mouseX+35,mouseY+69);
         pop();
          }
