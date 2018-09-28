@@ -1,4 +1,4 @@
-      //VARIABLES
+   //VARIABLES
 
       var posXbot1 = 200;
       var posYbot1 = 90;
@@ -216,7 +216,7 @@
 
 
         //CONTROL LUCES
-        if (bee.currentTime() > 20.3 && bee.currentTime() < 230) {
+        if (bee.currentTime() > 20.3 && bee.currentTime() < 330) {
           //PISO y PAREDES
           fill(0);
           stroke(255)
@@ -299,7 +299,7 @@
               rect(209, 87, 15, 15);
               rect(220, 75, 15, 15);
 
-              //chiquitos
+              //cuadrados chiquitos bola disco
               fill(50, random(0, 255), 80)
               rect(192, 63, 6, 6);
               rect(181, 94, 6, 6);
@@ -509,8 +509,9 @@
           strokeWeight(3);
           stroke(255)
           rect(mouseX, mouseY - 20, 91, 21)
+        }
           // 16 september
-          if (bee.currentTime() > 101 && bee.currentTime() < 104) {
+          if (bee.currentTime() > 100 && bee.currentTime() < 104) {
             push();
             fill(255);
             strokeWeight(1);
@@ -578,5 +579,5 @@
           //21 badeya
           //22 nubes
           //23badeya
-        }
+        
       }
