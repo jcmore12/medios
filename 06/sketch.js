@@ -1,4 +1,4 @@
-   //VARIABLES
+      //VARIABLES
 
       var posXbot1 = 200;
       var posYbot1 = 90;
@@ -509,7 +509,6 @@
           strokeWeight(3);
           stroke(255)
           rect(mouseX, mouseY - 20, 91, 21)
-        }
           // 16 september
           if (bee.currentTime() > 101 && bee.currentTime() < 104) {
             push();
