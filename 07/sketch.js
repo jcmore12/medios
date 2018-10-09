@@ -110,13 +110,13 @@ if (mouseIsPressed) {
 //que se enamoren del cantante y bailen 
   for (var i = 0; i < misX.length; i++) {
     image(fan1, misX[i], misY[i], 50, 70)
-    if (mouseY > 145 && mouseY < 159) {
+    if (mouseY > 145 && mouseY <= 240) {
 
       image(fan2, misX[i], misY[i], 50, 70)
       misX[i] = misX[i] + random(-1, 1)
       misY[i] = misY[i] + random(-1, 1)
     }
-    else if (mouseY > 150 && mouseY < height) {
+    else if (mouseY > 240 && mouseY < height) {
 
       image(fan2, misX[i], misY[i], 60, 80)
       misX[i] = misX[i] + random(-2, 2)
