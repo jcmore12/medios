@@ -116,6 +116,12 @@ if (mouseIsPressed) {
       misX[i] = misX[i] + random(-1, 1)
       misY[i] = misY[i] + random(-1, 1)
     }
+    else if (mouseY > 150 && mouseY < height) {
+
+      image(fan2, misX[i], misY[i], 60, 80)
+      misX[i] = misX[i] + random(-2, 2)
+      misY[i] = misY[i] + random(-2, 2)
+      }
     
     //que bailen con phineas
     if (mouseX > 96 && mouseX < 140 &&
