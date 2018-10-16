@@ -15,4 +15,4 @@ Ejercicios clase Medios Interactivos Juan Camilo Moreno
 
 [Ecosistema](https://editor.p5js.org/jc.morenoa/sketches/ryddNrr97)
 
-[08](https://jcmore12.github.io/mediosInteractivos/08/)
+[08](https://editor.p5js.org/jc.morenoa/sketches/ryddNrr97)
