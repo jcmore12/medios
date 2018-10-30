@@ -17,4 +17,4 @@ Ejercicios clase Medios Interactivos Juan Camilo Moreno
 
 [Ecosistema parte 2](https://editor.p5js.org/jc.morenoa/sketches/ryddNrr97)
 
-[Prototipo Juego](https://editor.p5js.org/jc.morenoa/sketches/HyZJpDEnQ)
+[Prototipo Juego](https://editor.p5js.org/jc.morenoa/sketches/HksVxD837)
