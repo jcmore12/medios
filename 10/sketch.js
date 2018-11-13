@@ -357,3 +357,9 @@ function touchMoved() {
   // prevent default
   return false;
 }
+
+function touchEnded() {
+  if (estado == 1) {
+   estado = 2
+  } 
+}
