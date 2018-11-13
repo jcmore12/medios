@@ -29,10 +29,9 @@ var miliseg = 0;
 
 function preload(){
 fondoJuego = loadImage("Fotos/raul.png");
-fondoInstru= loadImage("raul2.png")
-  fondoPierde= loadImage("raul3.png")
-//soniPierde=loadSound('Contents/loserLoser.m4a')
-  //soniInicio=loadSound('Contents/pantallaInicial1.mp3')
+fondoInstru= loadImage("Fotos/raul2.png")
+  fondoPierde= loadImage("fotos/raul3.png")
+
 
 }
 function setup() {
