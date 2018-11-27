@@ -45,6 +45,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   tiempoAnterior = millis();
+	tiempoAnterior1 = millis();
 //function resetSketch(){
 
 //estado=0
@@ -456,7 +457,7 @@ if(botonIncorrecto.isPlaying()==false){
     textSize(32)
          fill(255);
   noStroke();
-	miliseg1 = floor(millis() - tiempoAnterior);
+	miliseg1 = floor(millis() - tiempoAnterior1);
 	text(miliseg1, width / 14, height / 24);
 
     push();
@@ -482,7 +483,7 @@ pop();
  image(fondoGanador,0,0,width,height)
    fill(0)
     textSize(50)
-      text(miliseg,width/3+25, height-height/3);
+      text(miliseg1,width/3+25, height-height/3);
 
           //boton para  volver a jugar
     for (var o = 0; o < touches.length; o++) {
