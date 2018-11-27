@@ -526,13 +526,13 @@ if(click.isPlaying()==false){
       textSize(45)
       fill(179, 218, 241)
       textFont("Black Han Sans")
-    text('PLAYER 1',tamX * 2+100, tamY * 2+120)
-    }else {
+    text('PLAYER 1',tamX * 2+120, tamY * 2+140)
+    }else if(miliseg<miliseg1) {
 
     textSize(45)
       fill(152, 251, 152)
       textFont("Black Han Sans")
-    text('PLAYER 2',tamX * 2+100, tamY * 2+120)
+    text('PLAYER 2',tamX * 2+120, tamY * 2+140)
     }
     for (var g = 0; g < touches.length; g++) {
     if(touches[g].x > tamX, tamY * 3  && touches[g].x < tamX * 2, tamY * 3&&
