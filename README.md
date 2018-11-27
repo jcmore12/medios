@@ -23,4 +23,4 @@ Ejercicios clase Medios Interactivos Juan Camilo Moreno
 
 [Juego 13 Nov](https://editor.p5js.org/jc.morenoa/full/Hk37Knd67)
 
-[Prototipo Juego 2](https://jcmore12.github.io/mediosInteractivos/13/)
+[Juego Multijugador](https://jcmore12.github.io/mediosInteractivos/13/)
